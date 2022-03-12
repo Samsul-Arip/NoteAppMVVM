@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ChallengeGDSC</string>
+    <string name="my_notes">My Notes</string>
+    <string name="make_yourself_more_non_time">Make yourself more\nOn Time</string>
+    <string name="start">Start</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="exit">Exit</string>
+    <string name="add_item">Add item</string>
+    <string name="title">Title</string>
+    <string name="write_your_about">Write your about....</string>
+    <string name="write_your_description">Write your description....</string>
+    <string name="description">Description</string>
+    <string name="about">About</string>
+    <string name="probolinggo_jawa_timur">Probolinggo, Jawa timur</string>
+    <string name="search_hint">Search title…</string>
+    <string name="image_edit">image_edit</string>
+    <string name="delete">delete</string>
+</resources>

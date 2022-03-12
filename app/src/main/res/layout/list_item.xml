@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginTop="24dp"
+    android:background="@drawable/bg_item">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title Event" />
+    
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/white_secondary"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/nunito_regular"
+        android:textSize="14sp"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:text="Ipsum sum dolorLorem ipsum sum dolorLorem ipsum sum dolorLorem ipsum sum dolor" />
+
+    <TextView
+        android:id="@+id/tv_tgl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_regular"
+        android:paddingTop="5dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_edit"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="20/20/2000"
+        android:layout_marginBottom="25dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_tgl"
+        app:layout_constraintBottom_toBottomOf="@id/tv_tgl"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintStart_toEndOf="@id/tv_tgl"
+        app:layout_constraintEnd_toEndOf="@id/tv_description"
+        android:contentDescription="@string/image_edit"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

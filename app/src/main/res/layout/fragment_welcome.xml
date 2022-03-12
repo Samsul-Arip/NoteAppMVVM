@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_apps"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_notes"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make_yourself_more_non_time"
+        android:layout_marginTop="203dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:fontFamily="@font/nunito_regular"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/start"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textAllCaps="false"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="114dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
